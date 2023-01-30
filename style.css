@@ -230,11 +230,7 @@ ul {
   }
 
   .header {
-    margin-bottom: 20px;
-  }
-
-  .logo {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
   .main {
@@ -250,6 +246,14 @@ ul {
   .header {
     flex-direction: column;
     align-items: stretch;
+  }
+
+  .logo {
+    justify-content: space-between;
+  }
+
+  .logo img {
+    width: 48px;
   }
 
   h1 {
