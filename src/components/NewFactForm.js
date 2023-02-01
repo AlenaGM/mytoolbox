@@ -4,7 +4,6 @@ import CATEGORIES from "../data/categories";
 
 function NewFactForm({ setFacts, setShowForm }) {
   const [text, setText] = useState("");
-  // Fixed in a video text overlay
   const [source, setSource] = useState("");
   const [category, setCategory] = useState("");
   const [isUploading, setIsUploading] = useState(false);
@@ -17,18 +16,6 @@ function NewFactForm({ setFacts, setShowForm }) {
 
     // 2. Check if data is valid. If so, create a new fact
     if (text && isValidHttpUrl(source) && category && textLength <= 200) {
-      // 3. Create a new fact object
-      // const newFact = {
-      //   id: Math.round(Math.random() * 10000000),
-      //   text,
-      //   source,
-      //   category,
-      //   votesInteresting: 0,
-      //   votesMindblowing: 0,
-      //   votesFalse: 0,
-      //   createdIn: new Date().getFullYear(),
-      // };
-
       // 3. Upload fact to Supabase and receive the new fact object
       setIsUploading(true);
       const { data: newFact, error } = await supabase
