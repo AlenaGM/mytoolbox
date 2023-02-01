@@ -38,7 +38,7 @@ function NewFactForm({ setFacts, setShowForm }) {
   }
 
   return (
-    <form className="fact-form" onSubmit={handleSubmit}>
+    <form className="form" onSubmit={handleSubmit}>
       <input
         type="text"
         placeholder="Share a fact with the world..."
@@ -68,7 +68,7 @@ function NewFactForm({ setFacts, setShowForm }) {
           </option>
         ))}
       </select>
-      <button className="btn btn-large" disabled={isUploading}>
+      <button className="btn btn__large" disabled={isUploading}>
         Post
       </button>
     </form>

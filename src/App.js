@@ -6,7 +6,7 @@ import Header from "./components/Header";
 import NewFactForm from "./components/NewFactForm";
 import CategoryFilter from "./components/CategoryFilter";
 import FactList from "./components/FactList";
-import "./style.css";
+import "./style.scss";
 
 function App() {
   const [showForm, setShowForm] = useState(false);

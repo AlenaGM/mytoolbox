@@ -2,11 +2,11 @@ import CATEGORIES from "../data/categories";
 
 function CategoryFilter({ setCurrentCategory }) {
   return (
-    <aside>
-      <ul>
-        <li className="category">
+    <aside className="category">
+      <ul className="category__list">
+        <li className="category__list_item">
           <button
-            className="btn btn-all-categories"
+            className="btn btn__category_all"
             onClick={() => setCurrentCategory("all")}
           >
             All
@@ -14,9 +14,9 @@ function CategoryFilter({ setCurrentCategory }) {
         </li>
 
         {CATEGORIES.map((cat) => (
-          <li key={cat.name} className="category">
+          <li key={cat.name} className="category__list_item">
             <button
-              className="btn btn-category"
+              className="btn btn__category"
               style={{ backgroundColor: cat.color }}
               onClick={() => setCurrentCategory(cat.name)}
             >

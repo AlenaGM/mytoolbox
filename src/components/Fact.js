@@ -23,12 +23,12 @@ function Fact({ fact, setFacts }) {
   }
 
   return (
-    <li className="fact">
+    <li className="fact__list_item item">
       <p>
         {isDisputed ? <span className="disputed">[⛔️ DISPUTED]</span> : null}
         {fact.text}
         <a
-          className="source"
+          className="item-source"
           href={fact.source}
           target="_blank"
           rel="noreferrer"
@@ -37,7 +37,7 @@ function Fact({ fact, setFacts }) {
         </a>
       </p>
       <span
-        className="tag"
+        className="item-tag"
         style={{
           backgroundColor: CATEGORIES.find((cat) => cat.name === fact.category)
             .color,
@@ -45,7 +45,7 @@ function Fact({ fact, setFacts }) {
       >
         {fact.category}
       </span>
-      <div className="vote-buttons">
+      <div className="item-votes">
         <button
           onClick={() => handleVote("votesInteresting")}
           disabled={isUpdating}
