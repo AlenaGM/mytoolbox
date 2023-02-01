@@ -43,6 +43,7 @@ function NewFactForm({ setFacts, setShowForm }) {
         type="text"
         placeholder="Share a fact with the world..."
         value={text}
+        maxLength={200}
         onChange={(e) => setText(e.target.value)}
         disabled={isUploading}
       />
@@ -51,6 +52,7 @@ function NewFactForm({ setFacts, setShowForm }) {
         value={source}
         type="text"
         placeholder="Trustworthy source..."
+        maxLength={2000}
         onChange={(e) => setSource(e.target.value)}
         disabled={isUploading}
       />
