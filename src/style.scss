@@ -226,3 +226,22 @@ body {
     padding: 20px 32px 17px;
   }
 }
+
+.message {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 24px;
+}
+
+.disputed {
+  color: #ef4444;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+section {
+  overflow: scroll;
+  padding-bottom: 40px;
+}
