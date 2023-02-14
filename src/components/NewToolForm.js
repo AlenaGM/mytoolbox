@@ -69,7 +69,7 @@ function NewToolForm({ setTools, setShowForm }) {
         ))}
       </select>
       <button className="btn btn__large" disabled={isUploading}>
-        Post
+        Send
       </button>
     </form>
   );
