@@ -20,7 +20,7 @@ function CategoryFilter({ setCurrentCategory }) {
               style={{ backgroundColor: cat.color }}
               onClick={() => setCurrentCategory(cat.name)}
             >
-              {cat.name}
+              {cat.label}
             </button>
           </li>
         ))}

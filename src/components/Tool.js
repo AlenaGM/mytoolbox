@@ -2,34 +2,34 @@ import { useState } from "react";
 import supabase from "../supabase";
 import CATEGORIES from "../data/categories";
 
-function Fact({ fact, setFacts }) {
+function Tool({ tool, setTools }) {
   const [isUpdating, setIsUpdating] = useState(false);
   const isDisputed =
-    fact.votesInteresting + fact.votesMindblowing < fact.votesFalse;
+    tool.votesInteresting + tool.votesMindblowing < tool.votesFalse;
 
   async function handleVote(columnName) {
     setIsUpdating(true);
-    const { data: updatedFact, error } = await supabase
+    const { data: updatedTool, error } = await supabase
       .from("tools")
-      .update({ [columnName]: fact[columnName] + 1 })
-      .eq("id", fact.id)
+      .update({ [columnName]: tool[columnName] + 1 })
+      .eq("id", tool.id)
       .select();
     setIsUpdating(false);
 
     if (!error)
-      setFacts((facts) =>
-        facts.map((f) => (f.id === fact.id ? updatedFact[0] : f))
+      setTools((tools) =>
+        tools.map((f) => (f.id === tool.id ? updatedTool[0] : f))
       );
   }
 
   return (
-    <li className="fact__list_item item">
+    <li className="tool__list_item item">
       <p>
         {isDisputed ? <span className="disputed">[⛔️ DISPUTED]</span> : null}
-        {fact.text}
+        {tool.text}
         <a
           className="item-source"
-          href={fact.source}
+          href={tool.source}
           target="_blank"
           rel="noreferrer"
         >
@@ -39,31 +39,31 @@ function Fact({ fact, setFacts }) {
       <span
         className="item-tag"
         style={{
-          backgroundColor: CATEGORIES.find((cat) => cat.name === fact.category)
+          backgroundColor: CATEGORIES.find((cat) => cat.name === tool.category)
             .color,
         }}
       >
-        {fact.category}
+        {CATEGORIES.find((cat) => cat.name === tool.category).label}
       </span>
       <div className="item-votes">
         <button
           onClick={() => handleVote("votesInteresting")}
           disabled={isUpdating}
         >
-          👍 {fact.votesInteresting}
+          👍 {tool.votesInteresting}
         </button>
         <button
           onClick={() => handleVote("votesMindblowing")}
           disabled={isUpdating}
         >
-          🤯 {fact.votesMindblowing}
+          🤯 {tool.votesMindblowing}
         </button>
         <button onClick={() => handleVote("votesFalse")} disabled={isUpdating}>
-          ⛔️ {fact.votesFalse}
+          ⛔️ {tool.votesFalse}
         </button>
       </div>
     </li>
   );
 }
 
-export default Fact;
+export default Tool;

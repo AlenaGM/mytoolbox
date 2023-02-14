@@ -3,20 +3,20 @@ import supabase from "./supabase";
 
 import Loader from "./components/Loader";
 import Header from "./components/Header";
-import NewFactForm from "./components/NewFactForm";
+import NewToolForm from "./components/NewToolForm";
 import CategoryFilter from "./components/CategoryFilter";
-import FactList from "./components/FactList";
+import ToolList from "./components/ToolList";
 import "./style.scss";
 
 function App() {
   const [showForm, setShowForm] = useState(false);
-  const [facts, setFacts] = useState([]);
+  const [tools, setTools] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [currentCategory, setCurrentCategory] = useState("all");
 
   useEffect(
     function () {
-      async function getFacts() {
+      async function getTools() {
         setIsLoading(true);
 
         let query = supabase.from("tools").select("*");
@@ -24,15 +24,15 @@ function App() {
         if (currentCategory !== "all")
           query = query.eq("category", currentCategory);
 
-        const { data: facts, error } = await query
+        const { data: tools, error } = await query
           .order("votesInteresting", { ascending: false })
           .limit(1000);
 
-        if (!error) setFacts(facts);
+        if (!error) setTools(tools);
         else alert("There was a problem getting data");
         setIsLoading(false);
       }
-      getFacts();
+      getTools();
     },
     [currentCategory]
   );
@@ -41,7 +41,7 @@ function App() {
     <>
       <Header showForm={showForm} setShowForm={setShowForm} />
       {showForm ? (
-        <NewFactForm setFacts={setFacts} setShowForm={setShowForm} />
+        <NewToolForm setTools={setTools} setShowForm={setShowForm} />
       ) : null}
 
       <main className="main">
@@ -50,7 +50,7 @@ function App() {
         {isLoading ? (
           <Loader />
         ) : (
-          <FactList facts={facts} setFacts={setFacts} />
+          <ToolList tools={tools} setTools={setTools} />
         )}
       </main>
     </>

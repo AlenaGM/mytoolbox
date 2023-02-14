@@ -2,7 +2,7 @@ import { useState } from "react";
 import supabase from "../supabase";
 import CATEGORIES from "../data/categories";
 
-function NewFactForm({ setFacts, setShowForm }) {
+function NewToolForm({ setTools, setShowForm }) {
   const [text, setText] = useState("");
   const [source, setSource] = useState("");
   const [category, setCategory] = useState("");
@@ -14,18 +14,18 @@ function NewFactForm({ setFacts, setShowForm }) {
     e.preventDefault();
     console.log(text, source, category);
 
-    // 2. Check if data is valid. If so, create a new fact
+    // 2. Check if data is valid. If so, create a new tool
     if (text && isValidHttpUrl(source) && category && textLength <= 200) {
-      // 3. Upload fact to Supabase and receive the new fact object
+      // 3. Upload tool to Supabase and receive the new tool object
       setIsUploading(true);
-      const { data: newFact, error } = await supabase
+      const { data: newTool, error } = await supabase
         .from("tools")
         .insert([{ text, source, category }])
         .select();
       setIsUploading(false);
 
-      // 4. Add the new fact to the UI: add the fact to state
-      if (!error) setFacts((facts) => [newFact[0], ...facts]);
+      // 4. Add the new tool to the UI: add the tool to state
+      if (!error) setTools((tools) => [newTool[0], ...tools]);
 
       // 5. Reset input fields
       setText("");
@@ -41,7 +41,7 @@ function NewFactForm({ setFacts, setShowForm }) {
     <form className="form" onSubmit={handleSubmit}>
       <input
         type="text"
-        placeholder="Share a fact with the world..."
+        placeholder="Share a tool or a good artcle..."
         value={text}
         maxLength={200}
         onChange={(e) => setText(e.target.value)}
@@ -51,7 +51,7 @@ function NewFactForm({ setFacts, setShowForm }) {
       <input
         value={source}
         type="text"
-        placeholder="Trustworthy source..."
+        placeholder="Source..."
         maxLength={2000}
         onChange={(e) => setSource(e.target.value)}
         disabled={isUploading}
@@ -85,4 +85,4 @@ function isValidHttpUrl(string) {
   return url.protocol === "http:" || url.protocol === "https:";
 }
 
-export default NewFactForm;
+export default NewToolForm;

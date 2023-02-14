@@ -128,7 +128,7 @@ body {
   margin-bottom: 16px;
 }
 
-.fact__list_item {
+.tool__list_item {
   display: flex;
   align-items: center;
   gap: 24px;
@@ -163,7 +163,7 @@ body {
     }
     &-tag {
       font-family: "Coiny", sans-serif;
-      font-size: 14px;
+      font-size: 12px;
       text-transform: uppercase;
       padding: 3px 10px 0px 10px;
       border-radius: 100px;
