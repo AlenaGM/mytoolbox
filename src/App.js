@@ -6,7 +6,7 @@ import Header from "./components/Header";
 import NewToolForm from "./components/NewToolForm";
 import CategoryFilter from "./components/CategoryFilter";
 import ToolList from "./components/ToolList";
-import "./style.scss";
+import "./assets/style.scss";
 
 function App() {
   const [showForm, setShowForm] = useState(false);

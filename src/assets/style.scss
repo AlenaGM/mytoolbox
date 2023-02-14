@@ -128,6 +128,10 @@ body {
   margin-bottom: 16px;
 }
 
+.tool {
+  overflow: hidden;
+}
+
 .tool__list_item {
   display: flex;
   align-items: center;
