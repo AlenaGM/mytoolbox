@@ -12,10 +12,10 @@ body {
   background-color: #292524;
   color: #fafaf9;
   font-family: "Sono", sans-serif;
-  padding: 48px 64px;
+  padding: 48px 64px 0px;
   min-width: 320px;
   @media (max-width: 1090px) {
-    padding: 32px 48px;
+    padding: 32px 48px 0px;
   }
   @media (max-width: 768px) {
     padding: 24px;
@@ -36,7 +36,7 @@ body {
   @media (max-width: 768px) {
     margin-bottom: 40px;
   }
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     flex-direction: column;
     align-items: stretch;
   }
@@ -44,12 +44,12 @@ body {
     display: flex;
     align-items: center;
     gap: 16px;
-    @media (max-width: 500px) {
+    @media (max-width: 600px) {
       justify-content: space-between;
     }
     img {
       width: 68px;
-      @media (max-width: 500px) {
+      @media (max-width: 600px) {
         width: 48px;
       }
     }
@@ -59,9 +59,14 @@ body {
       font-family: "Coiny", sans-serif;
       line-height: 1;
       margin-top: 6px;
-      @media (max-width: 500px) {
+      @media (max-width: 600px) {
         font-size: 1.75rem;
       }
+    }
+  }
+  &__btn {
+    @media (max-width: 600px) {
+      margin-top: 40px;
     }
   }
 }
@@ -79,7 +84,7 @@ body {
     flex-direction: column;
     align-items: stretch;
   }
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     padding: 16px;
   }
   input,
@@ -116,20 +121,18 @@ body {
   display: grid;
   grid-template-columns: 250px 1fr;
   gap: 48px;
-  @media (max-width: 900px) {
-    grid-template-columns: 1fr;
-  }
+  height: calc(100vh - 68px - 48px - 40px);
   @media (max-width: 768px) {
     gap: 20px;
+  }
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+    height: auto;
   }
 }
 
 .category__list_item {
   margin-bottom: 16px;
-}
-
-.tool {
-  overflow: hidden;
 }
 
 .tool__list_item {
@@ -145,10 +148,10 @@ body {
   letter-spacing: -1px;
   @media (max-width: 1200px) {
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     gap: 12px;
   }
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     padding: 16px;
   }
   .item {
