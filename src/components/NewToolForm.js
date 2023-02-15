@@ -51,7 +51,7 @@ function NewToolForm({ setTools, setShowForm }) {
       <input
         value={source}
         type="text"
-        placeholder="Source..."
+        placeholder="Link..."
         maxLength={2000}
         onChange={(e) => setSource(e.target.value)}
         disabled={isUploading}

@@ -33,7 +33,7 @@ function Tool({ tool, setTools }) {
           target="_blank"
           rel="noreferrer"
         >
-          (Source)
+          (link)
         </a>
       </p>
       <span
