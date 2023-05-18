@@ -1,6 +1,6 @@
 # My Tools & Tips - Coding Resources Organizer  📇
 
-_A CRUD Application built with React that helps in organizing links to coding tools, articles, videos and other resotces._<br>
+_A CRUD Application built with React that helps in organizing links to coding tools, articles, videos and other resources._<br>
 
 A weekend project inspired by Jonas Schmedtmann's [Full Stack Crash Course] on Udemy that I made in order to:<br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp; Revise the basics of React;<br>
