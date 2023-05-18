@@ -5,7 +5,7 @@ _A CRUD Application built with React that helps in organizing links to coding to
 A weekend project inspired by Jonas Schmedtmann's [Full Stack Crash Course] on Udemy that I made in order to:<br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp; Revise the basics of React;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp; Acquire some good coding practices;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp; Build an APP that I will use to organize my coding notes and links.<br><br> 
+&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp; Build an App that I will use to organize my coding notes and links.<br><br> 
 
 ## Result
 ### My notes BEFORE:
