@@ -1,11 +1,11 @@
 # My Tools & Tips - Coding Resources Organizer  📇
 
-_A CRUD Application built with React that helps in organizing links to coding tools, articles, videos and other resources._<br>
+_A CRUD application built with React that helps organize links to coding tools, articles, videos and other resources._<br>
 
-A weekend project inspired by Jonas Schmedtmann's [Full Stack Crash Course] on Udemy that I made in order to:<br><br>
+This weekend project was inspired by Jonas Schmedtmann's [Full Stack Crash Course] on Udemy. I created it in order to:<br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp; Revise the basics of React;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp; Acquire some good coding practices;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp; Build an App that I will use to organize my coding notes and links.<br><br> 
+&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp; Build an app to organize my coding notes and links.<br><br> 
 
 ## Result
 ### My notes BEFORE:
