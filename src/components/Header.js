@@ -2,7 +2,7 @@ function Header({ showForm, setShowForm }) {
   return (
     <header className="header">
       <div className="header__logo">
-        <img src="logo.png" alt="Today I Learned Logo" />
+        <img src="logo.png" alt="My Tools & Tips Logo" />
         <h1>My Tools & Tips</h1>
       </div>
 
