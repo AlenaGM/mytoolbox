@@ -61,5 +61,5 @@ $ git checkout https://github.com/AlenaGM/mytoolbox -b name_for_new_branch
 \* _Weekend project built to practice React_ 
 
 
-   [My Tools & Tips]: <https://alenastoolbox.netlify.app/>
+   [My Tools & Tips]: <https://alenasstoolbox.netlify.app/>
    [Full Stack Crash Course]: <https://www.udemy.com/course/full-stack-crash-course/>
