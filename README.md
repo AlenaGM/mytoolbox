@@ -20,7 +20,7 @@ This weekend project was inspired by Jonas Schmedtmann's [Full Stack Crash Cours
 
 ## Demo
 
-[My Tools & Tips](#)
+[My Tools & Tips]
 
 ## Tech stack
 
