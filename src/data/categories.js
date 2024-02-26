@@ -1,5 +1,5 @@
 const CATEGORIES = [
-  { name: "books", color: "#ef4444", label: "Books" },
+  { name: "books", color: "#ef4444", label: "Books & Guides" },
   { name: "ui/ux/anims", color: "#f97316", label: "UI/UX/Anims" },
   { name: "html/css/js", color: "#eab308", label: "HTML, CSS, JS, TS" },
   { name: "vue", color: "#16a34a", label: "Vue" },

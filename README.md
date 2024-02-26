@@ -1,28 +1,30 @@
-# My Tools & Tips - Coding Resources Organizer  📇
+# My Tools & Tips - Coding Resources Organizer 📇
 
 _A CRUD application built with React that helps organize links to coding tools, articles, videos and other resources._<br>
 
 This weekend project was inspired by Jonas Schmedtmann's [Full Stack Crash Course] on Udemy. I created it in order to:<br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp; Revise the basics of React;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp; Acquire some good coding practices;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp; Build an app to organize my coding notes and links.<br><br> 
+&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp; Build an app to organize my coding notes and links.<br><br>
 
 ## Result
+
 ### My notes BEFORE:
-<img width="25%" alt="HomePage" src="../main/src/assets/unorganizedlist.jpg"><br> 
+
+<img width="25%" alt="HomePage" src="../main/src/assets/unorganizedlist.jpg"><br>
+
 ### My notes AFTER:
+
 <img width="50%" alt="HomePage" src="../main/src/assets/captureweb.jpeg">
 <br>
 
 ## Demo
-[My Tools & Tips]
 
-
+[My Tools & Tips](#)
 
 ## Tech stack
-<img height="40" alt="react-icon" src="../main/src/assets/react.png">  <img height="40" alt="supabase-icon" src="../main/src/assets/supabase.png">
 
-
+<img height="40" alt="react-icon" src="../main/src/assets/react.png"> <img height="40" alt="supabase-icon" src="../main/src/assets/supabase.png">
 
 ## Installation
 
@@ -42,7 +44,6 @@ $ npm install
 $ npm start
 ```
 
-
 ## Contributing
 
 Contributions are always welcome! If you want to contribute:
@@ -57,9 +58,7 @@ $ git checkout https://github.com/AlenaGM/mytoolbox -b name_for_new_branch
 
 ##
 
-  
-\* _Weekend project built to practice React_ 
+\* _Weekend project built to practice React_
 
-
-   [My Tools & Tips]: <https://alenastoolbox.netlify.app/>
-   [Full Stack Crash Course]: <https://www.udemy.com/course/full-stack-crash-course/>
+[My Tools & Tips]: https://alenastoolbox.netlify.app/
+[Full Stack Crash Course]: https://www.udemy.com/course/full-stack-crash-course/
