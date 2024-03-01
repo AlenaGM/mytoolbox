@@ -15,7 +15,7 @@ function ToolList({ tools, setTools }) {
           <Tool key={tool.id} tool={tool} setTools={setTools} />
         ))}
       </ul>
-      <p>There are {tools.length} tools in the database. Add your own!</p>
+      <p>There are {tools.length} tools in the database. Add yours!</p>
     </section>
   );
 }
